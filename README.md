@@ -147,7 +147,6 @@ The datasets used in the notebook are:
 1. matches.csv
 2. deliveries.csv
 
-The dataset source and the exact version of the downloaded files should be verified before final submission because the records loaded in the notebook include seasons through 2024, while the supplied Kaggle page refers to 2008–2020.
 
 ## 2.2 Matches Dataset
 
