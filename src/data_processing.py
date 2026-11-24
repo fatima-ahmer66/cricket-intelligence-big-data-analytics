@@ -1,3 +1,5 @@
+import os
+os.makedirs("outputs", exist_ok=True)
 ## Dataset Understanding
 import pyspark
 import pandas as pd
@@ -17,13 +19,13 @@ print("Spark Version:", spark.version)
 print("Spark Session Created Successfully")
 
 matches = spark.read.csv(
-    "/content/matches.csv",
+    "data/matches.csv",
     header=True,
     inferSchema=True
 )
 
 deliveries = spark.read.csv(
-    "/content/deliveries.csv",
+    "data/deliveries.csv",
     header=True,
     inferSchema=True
 )
@@ -282,19 +284,19 @@ team_features.show(10)
 
 match_features.write.mode("overwrite").option(
     "header", True
-).csv("/content/match_features")
+).csv("outputs/match_features")
 
 batter_features.write.mode("overwrite").option(
     "header", True
-).csv("/content/batter_features")
+).csv("outputs/batter_features")
 
 bowler_features.write.mode("overwrite").option(
     "header", True
-).csv("/content/bowler_features")
+).csv("outputs/bowler_features")
 
 team_features.write.mode("overwrite").option(
     "header", True
-).csv("/content/team_features")
+).csv("outputs/team_features")
 
 print("All datasets saved successfully")
 
