@@ -1,0 +1,47 @@
+# Cricket Intelligence: Big Data Analytics and Predictive Modeling
+
+**Dataset Source (Kaggle):**  
+[IPL Complete Dataset 2008–2020](https://www.kaggle.com/datasets/patrickb1912/ipl-complete-dataset-20082020)
+
+---
+
+# 1. Introduction and Project Planning
+
+## 1.1 Introduction
+
+Cricket generates a large amount of data through matches, teams, players, scores, wickets, and ball-by-ball records. This data contains useful information that can help understand team performance, player statistics, and match results.
+
+This project uses Big Data technologies and machine learning techniques to analyze cricket data. Apache Spark and PySpark are used to process, clean, and analyze the datasets. The project also applies machine learning models to predict match winners and player runs.
+
+The main purpose is to convert raw cricket data into useful information and understand how data analytics can support cricket-related decisions.
+
+## 1.2 Problem Statement
+
+Cricket datasets contain a large amount of information about matches and individual player performances. Analyzing this information manually can be time-consuming and difficult.
+
+This project aims to use Apache Spark and machine learning to process cricket data, identify important patterns, analyze team and player performance, and develop predictive models.
+
+## 1.3 Project Objectives
+
+The main objectives of this project are:
+
+1. To process cricket datasets using Apache Spark and PySpark.
+2. To understand and explore match-level and ball-by-ball data.
+3. To clean and prepare the datasets for analysis.
+4. To combine match and delivery information using a common match ID.
+5. To analyze team and player performance through Exploratory Data Analysis.
+6. To develop classification models for predicting cricket match winners.
+7. To develop a regression model for predicting player runs.
+8. To evaluate the performance of the machine learning models.
+
+## 1.4 Tools and Technologies
+
+The following tools and technologies are used in this project:
+
+- **Python:** Programming language used for data processing and analysis.
+- **Google Colab:** Cloud-based environment used to write and execute Python code.
+- **Apache Spark:** Big Data processing engine used to handle cricket datasets.
+- **PySpark:** Python API used to work with Apache Spark.
+- **PySpark MLlib:** Used to build and evaluate machine learning models.
+- **Pandas:** Used for handling and displaying smaller analytical results.
+- **Matplotlib:** Used
