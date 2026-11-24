@@ -27,8 +27,9 @@ jobs:
 
       - name: Install Requirements
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install kaggle
+          pip install --upgrade six kaggle
 
       - name: Create Data Folder
         run: mkdir -p data
