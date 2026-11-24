@@ -2,3 +2,5 @@ pyspark
 pandas
 numpy
 matplotlib
+kaggle
+six
