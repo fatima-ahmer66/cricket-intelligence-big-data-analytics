@@ -1001,35 +1001,11 @@ These improvements could make the project more useful and provide opportunities 
 
 # 12. REFERENCES
 
-## 12.1 Dataset Reference
+# Dataset Reference
 
 IPL Complete Dataset 2008–2020. Kaggle.
 
 https://www.kaggle.com/datasets/patrickb1912/ipl-complete-dataset-20082020
-
-*Note: Confirm that this source corresponds to the exact CSV files used in the notebook, which contain records through 2024.*
-
-## 12.2 Technical References
-
-Apache Software Foundation. (n.d.). *Apache Spark Documentation.*
-
-https://spark.apache.org/docs/latest/
-
-Apache Software Foundation. (n.d.). *PySpark Documentation.*
-
-https://spark.apache.org/docs/latest/api/python/
-
-Apache Software Foundation. (n.d.). *MLlib: Main guide.*
-
-https://spark.apache.org/docs/latest/ml-guide.html
-
-Matplotlib Development Team. (n.d.). *Matplotlib Documentation.*
-
-https://matplotlib.org/stable/
-
-Google. (n.d.). *Google Colab.*
-
-https://colab.research.google.com/
 
 # 13. APPENDICES
 
