@@ -4,7 +4,6 @@ name: Cricket Intelligence Project
 on:
   push:
     branches: [main]
-
   workflow_dispatch:
 
 jobs:
@@ -13,21 +12,42 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
       - name: Install Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
 
       - name: Install Requirements
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install kaggle
+
+      - name: Create Data Folder
+        run: mkdir -p data
+
+      - name: Download Cricket Dataset from Kaggle
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          kaggle datasets download \
+            -d patrickb1912/ipl-complete-dataset-20082020 \
+            -p data \
+            --unzip
+
+      - name: Check Downloaded Files
+        run: |
+          ls -lh data
+          test -f data/matches.csv
+          test -f data/deliveries.csv
 
       - name: Run Cricket Project
         run: python src/run_project.py
