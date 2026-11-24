@@ -2,14 +2,10 @@
 
 **Project Report**
 
-**Course:** [Course Name]  
-**Submitted To:** [Instructor's Name]  
-**Submitted By:** [Your Name and Registration Number]  
-**Group Members:** [Friend's Name and Registration Number]  
-**University:** Beaconhouse National University (BNU)  
-**Submission Date:** [Date]
+**Course:** Big Data  
+**Submitted To:** Dr. Muhamma Farooq 
+**Submitted By:** Fatima Ahmer & Mahnoor Nadeem     
 
----
 
 # Executive Summary
 
